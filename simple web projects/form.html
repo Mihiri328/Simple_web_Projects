@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practical</title>
+
+<style>
+
+    h3{
+        color: blue;
+    }
+
+    .titlehead{
+        color: blue;
+    }
+
+    body{
+        outline-color: blue;
+        outline-style: groove;
+        padding: 20px;
+        width: 500px;
+    }
+    
+   input[type="submit"]:hover , input[type="reset"]{
+    background-color: #999;
+   
+
+   } 
+   input[type="submit"] , input[type="reset"]{
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #66666e;
+    cursor: pointer;
+   
+   }
+
+
+</style>
+
+
+
+</head>
+<body>
+    <form action="process.php" method="post" >
+    <h3>Please Complete our Survey</h3> 
+    <p> <b>Contact Information </b> </p>
+    <label for="email"  class="titlehead"> Email Address: </label> &nbsp; &nbsp;
+    <input type="email" id="email" name="email"> <br> <br>
+  
+    <label for="firstname"  class="titlehead"> First Name: </label> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+    <input type="text" id="firstname" name="firstname"> <br> <br>
+
+    <label for="lastname"  class="titlehead"> Last Name: </label> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+    <input type="text" id="lastname" name="lastname"> 
+
+    <p> <b> Geographic Information</b> </p>
+
+    <label for="state" class="titlehead"> State: </label> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+    <input type="text" id="state" name="state" placeholder="Two Characters"> <br> <br>
+
+
+    <label for="zipcode" class="titlehead"> Zip Code: </label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+    <input type="number" id="number" name="number" placeholder="Five digits"> 
+
+
+
+
+    <p><b>How did you hear about us? </b></p>
+
+   <label for=" " class="titlehead">  web search:   &nbsp; &nbsp; &nbsp; &nbsp; <input type="checkbox" name="web Search" id="web search" class="titlehead"> <br>
+    Facebook:  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="checkbox" name="Facebook" id="Facebook" class="titlehead" > <br>
+    Twitter:   &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <input type="checkbox" name="Twitter" id="Twitter"  class="titlehead"> <br>
+    Email Message:   &nbsp;<input type="checkbox" name="Email massage" id="Email message" > </label>
+
+
+    <p><b>Thank you for taking our survey! </b></p>
+    <div class="btn">
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; <input type="submit" name="submit " id=" submit" > &nbsp;&nbsp;  
+    <input type="reset" name="reset " id=" reset" > </div>
+
+
+
+</form>
+</body>
+</html>
